@@ -72,10 +72,16 @@ img{
     display: flex; /* Para manipular a todos sus elementos hijos*/
     justify-content: center;
     gap: 1rem;
+    bottom: 10px;
 }
 .nav-link
 {
     color: white;
+}
+.nav-link:hover
+{
+    color: #b85b30;
+
 }
 /* hero */
 .hero
@@ -107,6 +113,7 @@ img{
     color: white;
     padding: 25px 10px 0; /* y x */
     max-width: 1024px;
+    height: 270px;
 }
 .hero-title
 {
@@ -135,8 +142,16 @@ img{
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-.article-body{
+.article-body
+{
     padding: 0 20px 20px;
+}
+.article-img:hover
+{
+    padding: 20px 20px;
+    margin-top: 4px;    
+    opacity: .7;
+    cursor: pointer;
 }
 p
 {
@@ -151,13 +166,18 @@ p
     color: white;
     font-weight: 700;
 }
+.article-link:hover
+{
+    background-color: chocolate;
+}
 /* Parallax */
 .parallax
 {
     position: relative;
     width: 100%;
     height: 500px;
-    background-image: url('../img/random.jpeg');
+    background-image: url('https://source.unsplash.com/random/1920%C3%971080/?pets');
+    /* background-image: url('../img/mascota_random.jpeg'); */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -183,6 +203,7 @@ p
     font-size: 3rem;
     margin-top: 15px;
     margin-bottom: 10px;
+    color: chocolate;
 }
 .adoptame-description
 {
@@ -224,6 +245,10 @@ p
 .footer-link
 {
     color: rgb(0, 0, 0);
+}
+.footer-link:hover
+{
+    color: chocolate;
 }
 /* Responsive */
 @media screen and (min-width: 768px) { /* Tablets*/
